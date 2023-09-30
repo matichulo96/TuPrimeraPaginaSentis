@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mi tienda de libros{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Mi tienda de libros</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/nosotros/">Sobre nosotros</a></li>
+                <li><a href="/busca_tu_libro/">Busca tu libro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    
+    <footer>
+        &copy; Mi tienda de libros
+    </footer>
+</body>
+</html>
