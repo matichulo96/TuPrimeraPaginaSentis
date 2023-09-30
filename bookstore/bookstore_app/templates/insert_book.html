@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Busca tu libro{% endblock %}
+{% block title %}Inserta tu libro{% endblock %}
 
 {% block content %}
-<h2>Busca tu libro</h2>
+<h2>Inserta tu libro</h2>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Buscar libro</button>
+    <button type="submit">Guardar</button>
 </form>  
 {% endblock %}
-
-

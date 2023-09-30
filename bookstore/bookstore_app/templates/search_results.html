@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Resultados de búsqueda{% endblock %}
+
+{% block content %}
+<h1>Resultados para "{{ query }}"</h1>
+    
+{% if results %}
+    <ul>
+        {% for book in results %}
+            <li>{{ book.title }}</li>
+            <li>{{ book.year }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Sin resultados para "{{ query }}"</p>
+{% endif %}
+{% endblock %}

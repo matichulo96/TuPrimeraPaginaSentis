@@ -16,6 +16,4 @@ class Publisher(models.Model):
 
 class Book(models.Model):
     title = models.CharField(max_length=30)
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
     year = models.IntegerField()
-    publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE)
